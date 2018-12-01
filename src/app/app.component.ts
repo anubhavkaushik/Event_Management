@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserDetails } from './user-details';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'AWSProject';
+  title = 'Event Management';
+  userData = new UserDetails();
+
+  submit()
+  {
+    console.log(this.userData);
+  }
+  
 }
