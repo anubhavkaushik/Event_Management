@@ -2,7 +2,7 @@ export class UserDetails {
     public firstName: string;
     public lastName: string;
     public emailId: string;
-    public phnNumber: number;
+    public Contact: number;
     /* constructor(firstName: string,lastName: string,emailId: string,phnNumber: number)
     {
         this.firstName=firstName;
