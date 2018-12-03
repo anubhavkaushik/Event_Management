@@ -3,6 +3,7 @@ export class UserDetails {
     public lastName: string;
     public emailId: string;
     public Contact: number;
+    public password: string;
     /* constructor(firstName: string,lastName: string,emailId: string,phnNumber: number)
     {
         this.firstName=firstName;
