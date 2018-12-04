@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserDetails } from './user-details';
+import { Response } from './response';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -12,6 +13,7 @@ export class AppComponent {
   title = 'Event Management';
   url ='https://ynuezfdtla.execute-api.ap-south-1.amazonaws.com/development';
   userData = new UserDetails();
+  response = new Response();
 //Function called when user clicks on register Button
   submit()
   {
@@ -20,9 +22,11 @@ export class AppComponent {
     this.httpClient.post(this.url,this.userData).subscribe(
       res => {
         console.log(res);
+        this.response.message=res.toString();
       },
       err =>{
         console.log("Call To Lamda Function Failed");
+        this.response.message=err.toString();
       }
     )
   }
