@@ -3,7 +3,7 @@ import { UserDetails } from './user-details';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-root',
+  selector: 'registration-service',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })
