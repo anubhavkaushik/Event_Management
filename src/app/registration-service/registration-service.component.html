@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  
+  <table>
+    <tr>
+      <td>
+  <div>
+    <label for="firstName">First Name :</label>
+    <input type="text" [(ngModel)]="userData.firstName"/>
+
+  </div>
+</td>
+    </tr>
+    <tr>
+<td>
+  <div>
+    <label for="lastName">Last Name :</label>
+    <input type="text" [(ngModel)]="userData.lastName"/>
+    </div>
+</td>
+</tr>
+  <tr>
+    <td>
+   <div>
+    <label for="emailId">EmailId  :</label>
+    <input type="text" [(ngModel)]="userData.emailId" />
+  </div>
+</td>
+  </tr>
+  <tr>
+<td>
+  <div>
+    <label for="password">Password  :</label>
+    <input type="password" [(ngModel)]="userData.password" />
+  </div>
+</td>
+</tr>
+<tr>
+  <td>
+  <div>
+    <label for="Contact">Contact No :</label>
+    <input type="text"  [(ngModel)]="userData.Contact"/>
+  </div>
+</td>
+</tr>
+<tr>
+<td>
+  <div >
+    <button type="submit" (click)="submit()" >Register!!!</button>
+  </div>
+</td>
+</tr>
+<tr><td>{{this.response.message}}</td></tr>
+</table>
+<router-outlet></router-outlet>

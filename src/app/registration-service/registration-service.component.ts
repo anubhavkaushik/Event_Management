@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
-import { UserDetails } from './user-details';
-import { Response } from './response';
+import { UserDetails } from './../user-details';
+import { Response } from './../response';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'home-page',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  selector: 'app-registration-service',
+  templateUrl: './registration-service.component.html',
+  styleUrls: ['./registration-service.component.sass']
 })
-export class AppComponent {
+export class RegistrationServiceComponent {
   constructor(private httpClient:HttpClient){};
-  title = 'Event Management';
- /*  url ='https://ynuezfdtla.execute-api.ap-south-1.amazonaws.com/development';
+ 
+  url ='https://ynuezfdtla.execute-api.ap-south-1.amazonaws.com/development';
   userData = new UserDetails();
   response = new Response();
 //Function called when user clicks on register Button
@@ -30,5 +30,6 @@ export class AppComponent {
       }
     )
   }
-  */ 
+  
+
 }

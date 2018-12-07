@@ -1,0 +1,29 @@
+<div style="text-align:center">
+  
+  <table>
+    
+  <tr>
+    <td>
+   <div>
+    <label for="emailId">EmailId  :</label>
+    <input type="text" [(ngModel)]="logInDetails.email" />
+  </div>
+</td>
+  </tr>
+  <tr>
+<td>
+  <div>
+    <label for="password">Password  :</label>
+    <input type="password" [(ngModel)]="logInDetails.password" />
+  </div>
+</td>
+</tr>
+<tr>
+<td>
+  <div >
+    <button type="submit" (click)="logIn()" >Log-In!!!</button>
+  </div>
+</td>
+</tr>
+<tr><td>{{this.response.message}}</td></tr>
+</table>
