@@ -17,7 +17,7 @@ export class VendorRegistrationComponent{
   apiGatewayURL = 'https://mklnl3dc50.execute-api.ap-south-1.amazonaws.com/Dev';
   vendorObj = new vendorDetails();
   response = new vendorRegisterResponse();
-  public bussinessTypeOptions = ['Wedding Photography','Wedding Revenue', 'DJ','Mehendi','Decors','Caterers'] 
+  public bussinessTypeOptions = ['Wedding Photography','Wedding venue', 'DJ','Mehendi','Decors','Caterers'] 
   public cityList = ['Delhi','Mumbai','Pune','Kolkata','Gurgaon','Chennai'];
   ngOnInit() {
   }
