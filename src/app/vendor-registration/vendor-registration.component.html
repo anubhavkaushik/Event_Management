@@ -1,0 +1,104 @@
+<table>
+  <tr>
+    <td>
+      <label for="bussinessName">Bussiness Name</label>
+
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="vendorObj.bussinessName" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="bussinessType">Bussiness Type</label>
+
+    </td>
+    <td>
+      <select [(ngModel)]='vendorObj.bussinessType'>
+        <option *ngFor='let option of bussinessTypeOptions' [value]="option">{{option}}</option>
+      </select>
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="bussinessEmail">Bussiness Email</label>
+
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="vendorObj.bussinessEmail" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="addressLine1">Address Line1</label>
+
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="vendorObj.addressLine1" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="addressLine2">Address Line2</label>
+
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="vendorObj.addressLine2" />
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <label for="city">City</label>
+
+    </td>
+    <td>
+      <select [(ngModel)]='vendorObj.city'>
+        <option *ngFor='let city of cityList' [value]="option">{{city}}</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="mContact">Bussiness Contact</label>
+
+    </td>
+    <td>
+      <input type="number" size="10" [(ngModel)]="vendorObj.mContact" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="password">Password</label>
+
+    </td>
+    <td>
+      <input type="password" [(ngModel)]="vendorObj.password" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="bussinessImage">Bussiness Profile</label>
+
+    </td>
+    <td>
+      <input type="file" [(ngModel)]="vendorObj.frontImage" />
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <div>
+        <button type="submit" (click)="submit()">Register!!!</button>
+      </div>
+    </td>
+  </tr>
+</table>

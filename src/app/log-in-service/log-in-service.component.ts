@@ -20,15 +20,13 @@ export class LogInServiceComponent implements OnInit {
   }
   logIn()
   {
-    console.log(this.logInDetails);
-    //Calling Post Function Of Lamda
-    this.httpClient.post(this.url,this.logInDetails).subscribe(
+        this.httpClient.post(this.url,this.logInDetails).subscribe(
       res => {
         console.log(res);
         this.response.message=res.toString();
       },
       err =>{
-        console.log("Call To Lamda Function Failed");
+        console.log("Servers are down please try again later");
         this.response.message=err.toString();
       }
     )

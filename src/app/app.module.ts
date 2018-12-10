@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { LogInServiceComponent } from './log-in-service/log-in-service.component';
 import { RegistrationServiceComponent } from './registration-service/registration-service.component';
+import { VendorRegistrationComponent } from './vendor-registration/vendor-registration.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LogInServiceComponent,
-    RegistrationServiceComponent
+    RegistrationServiceComponent,
+    VendorRegistrationComponent,
+    
+   
     
   ],
   imports: [
